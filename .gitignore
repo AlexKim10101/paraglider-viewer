@@ -1,0 +1,16 @@
+node_modules/
+dist/
+.env
+.env.local
+.env.*.local
+*.log
+coverage/
+playwright-report/
+test-results/
+.vite/
+.DS_Store
+Thumbs.db
+
+# личные документы проекта
+CLAUDE.md
+PLAN.md

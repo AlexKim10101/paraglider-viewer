@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "observer-pattern": {
+      "source": "PatternsDev/skills",
+      "sourceType": "github",
+      "skillPath": "javascript/observer-pattern/SKILL.md",
+      "computedHash": "e5426d32dcff620621de6c00f9d455d1af084ac35bdf69a967d33562818b35cf"
+    }
+  }
+}
