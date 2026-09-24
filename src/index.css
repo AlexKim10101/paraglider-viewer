@@ -9,6 +9,7 @@ html,
 body,
 #root {
   height: 100%;
+  overscroll-behavior: none;
 }
 
 @theme inline {
@@ -133,4 +134,10 @@ body,
   html {
     @apply font-sans;
   }
+}
+/* Атрибуция Cesium/ion должна оставаться видимой: на мобильной раскладке
+   поднимаем её над нижней панелью. */
+[data-layout='mobile'] .cesium-viewer-bottom {
+  /* Cesium пишет инлайн-стиль bottom при каждом ресайзе. */
+  bottom: calc(4rem + env(safe-area-inset-bottom)) !important;
 }

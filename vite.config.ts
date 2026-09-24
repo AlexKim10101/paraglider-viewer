@@ -24,6 +24,14 @@ export default defineConfig({
   define: {
     CESIUM_BASE_URL: JSON.stringify(`/${CESIUM_BASE_URL}`),
   },
+  optimizeDeps: {
+    // Пред-бандлинг Cesium при старте дев-сервера, а не при первом import().
+    include: ['cesium'],
+  },
+  build: {
+    // Ленивый чанк с Cesium весит ~4 МБ (1.1 МБ gzip), это ожидаемо.
+    chunkSizeWarningLimit: 4500,
+  },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),

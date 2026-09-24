@@ -1,0 +1,18 @@
+{
+  "app": {
+    "title": "Flight Viewer"
+  },
+  "language": {
+    "label": "Interface language",
+    "ru": "RU",
+    "en": "EN"
+  },
+  "scene": {
+    "loading": "Loading 3D scene…",
+    "error": "Failed to load the 3D scene",
+    "retry": "Retry"
+  },
+  "panel": {
+    "empty": "Drop .igc or .kml files here"
+  }
+}
