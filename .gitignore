@@ -1,13 +1,23 @@
 node_modules/
 dist/
+dist-ssr/
+*.local
 .env
-.env.local
-.env.*.local
+.env.*
+!.env.example
+
+# логи и отчёты
 *.log
 coverage/
 playwright-report/
 test-results/
-.vite/
+blob-report/
+playwright/.cache/
+
+# редакторы и ОС
+.vscode/*
+!.vscode/extensions.json
+.idea
 .DS_Store
 Thumbs.db
 
